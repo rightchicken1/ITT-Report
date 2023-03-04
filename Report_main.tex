@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,titlesec,xcolor}
+\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
+\usepackage{multirow,physics}
+
+\title{\Huge\textbf{Insights through asymptotics:}\\
+ \LARGE Benchmarking and analysis of climate effects on flood models}
+\author{Henry Writer }
+\date{\today}
+
+\renewcommand{\thesection}{\Roman{section}}
+
+
+\titleformat{\section}[block]{\LARGE\bfseries\filcenter\titlerule\vspace{2mm}}{\thesection}{1em}{}
+
+\titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+\begin{document}
+
+\maketitle
+
+\section{Background}
+
+There is currently unmistakable evidence that the climate of the planet is changing. We currently do not understand what the potential outcomes of these changes may be. One route we have to understand these changes takes the form of models these models then can be used to help us predict the future impact of climate change.
+
+In the United Kingdom one of the largest potential effects of climate change we will take the form of river flooding. The government cost the 2015/16 floods at 1.6 billion pounds. This number does not take into account the human toll of this event. Additionally, it appears that the number and severity of flooding is increasing. 
+
+This has motivated the hydrological community in increasing the understanding of river flooding. This has been done by developing a 'zoo' of potential flooding models. However, there are two problems regarding this large group of models. One since there is so many it is hard to separate them REF. 
+Secondly we believe there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using asymptotic analysis.
+
+\subsection{How do we model river flooding}
+There are currently three main approaches to flooding model. We have statistical models this realy on using statistical method to fit models to data and use statistical models to make inferences about the future. 
+We have conceptual models, these realy in creating a set of states from which water can move between this is best represented by a FIGURE. 
+Finaly we have physical models these take a continuime mechanics approch and set up a set of conservation laws and use these to drive a set PDE sytems that can be used to mdoel the flooding event.
+
+\subsection*{Conceptual models}
+
+
+
+\subsection{How do we currently interpret the output of flooding models}
+
+\subsection{Reduced PDE model}
+
+Along with conceptual models we are also intrested in analysing a PDE of flooding. The paritucaler model we are intresed in is a reduced PDE model that has been developed by Piotro as part of his PhD thesis. The model reduces the problem by 
+
+
+\section{Problem formulation and method}
+
+\subsection{A new approach to benchmarking}
+The new approach we have to Benchmarking flooding models will allows us to derive asymptotic scaling laws. 
+Such laws will allow us additional insight by telling us how the output of the model will change with respect to some perturbation of input data $\epsilon$.
+
+For example in the G2G model used by Bell we would be able to derevie a scaling law which will tell us how the flood response time vary with perturbations to the rainfall. Similarly in for the models shown in the benchmarking paper we would be able to derive scaling laws that may help to further separate the 13 different models.
+
+The new approach is two pronged first we use a numerically derive a scaling law, then use this to inform a search analytical scaling law. Note that it might note always be able to derive analytical scaling laws but it will always be possible to derive numerical ones.
+
+The process used to derive the numerical scaling laws is best demonstrated with the use of diagrams.
+
+
+\subsection{Extending the model with periodic forcing}
+
+\section{Objectives and strategy}
+
+The work outlined above is designed to be undertaken as PhD project. A potential student undertaken this project would require a strong background in fluid mechanics, asymptotic analysis and, would require a passion for environmental mathematics. 
+Additionally, it would be beneficial if a potential student had some experience with time series analysis, and numerical PDEs.
+
+\subsection{Objectives}
+Below is a list of initial targets which shall form the bases of project.
+
+\begin{enumerate}
+    \item \textbf{Numerical derive scaling laws,} from conceptual models. This would require conducting a literature review to ascertain influential models that can be analyse to draw more inference from.
+    \item \textbf{Analytically derive scaling laws,} this shall be accomplished by using numerical laws derived to inform a discretion of the conceptual models. To conduct this integration we shall use asymptotic analysis.
+    \item \textbf{Apply periodic rainfall to the reduced PDE model}. To this end we will need to conduct a time series analysis of rainfall data. This shall be used to find appropriate time scales to inform the analysis of the reduced PDE model.
+\end{enumerate}
+
+\subsection{Potential future objectives}
+
+There are a number of directions this project may be extended dependent upon the interests of the student. A couple of potential avenues of extension are outlined below to show the scope of where this project.
+
+The reduced PDE model has a number of other extension which can be explored. One approch would be to use the astytotic meth of homisation, this would alow us the axpolre how a more complex soil structore will effect flooding effects. Another approch we could use to exmine the water flow in soil would be to replace the eqaution which govens the flow through the soil with a the conduet equation this would allow us to explor more complex soil denamics.
+
+We could also take a dynamical systems approch to analysisng the reduced PDE model. For example it very natural to assume that there is two possible states in which a catchment area could be in, a staturated state this would be equivalent to a wetland, and a dry/draught state. We then assume that as the land dry out it becomes less pouress so more watter flows direclty overland. We can then explore how much rainfall would have to change to transition between these states.
+
+Another promesing avenuea we could explore would be attemtping to match the conceptual models with the reduced PDE model. This would be of great intrested as the different methoglgies for building flooding models are metphoricaly existe on seprated islands. By matching the PDE modle to a conceptual model we hope to be able to connect these modles to gether.
+
+These free possible reasrech direction are not ment to be taken as a demenstartion of the scope of this projetc and it postential.
+
+
+
+\section{Impact}
+
+\subsection{Mathematical impact}
+
+\subsection{}
+
+\section{References}
+
+\end{document}
