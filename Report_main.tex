@@ -1,20 +1,20 @@
 \documentclass[11pt]{article}
-\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,titlesec,xcolor,wrapfig}
+\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
-\usepackage{multirow,physics}
-
+\usepackage[rightcaption]{sidecap}
 \title{\Huge\textbf{Insights through asymptotics:}\\
  \LARGE Benchmarking and analysis of climate effects on flood models}
 \author{Henry Writer }
 \date{\today}
 
+\usepackage{titlesec}
 \renewcommand{\thesection}{\Roman{section}}
-
 
 \titleformat{\section}[block]{\LARGE\bfseries\filcenter\titlerule\vspace{2mm}}{\thesection}{1em}{}
 
 \titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
 
+\usepackage{wrapfig}
 \begin{document}
 
 \maketitle
@@ -25,6 +25,7 @@ There is currently unmistakable evidence that the climate of the planet is chang
 
 In the United Kingdom one of the largest potential effects of climate change we will take the form of river flooding. The government cost the 2015/16 floods at 1.6 billion pounds. This number does not take into account the human toll of this event. Additionally, it appears that the number and severity of flooding is increasing. 
 
+
 This has motivated the hydrological community in increasing the understanding of river flooding. This has been done by developing a 'zoo' of potential flooding models. However, there are two problems regarding this large group of models. One since there is so many it is hard to separate them REF. 
 Secondly we believe there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using asymptotic analysis.
 
@@ -33,22 +34,28 @@ There are currently three main approaches to flooding model. We have statistical
 We have conceptual models, these realy in creating a set of states from which water can move between this is best represented by a FIGURE. 
 Finaly we have physical models these take a continuime mechanics approch and set up a set of conservation laws and use these to drive a set PDE sytems that can be used to mdoel the flooding event.
 
-\subsection{Conceptual models}
-As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations the variable of interest may reside in. Travel between these states is then governed by a simple mathematical expression.
-
-Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Figs/Concept.png}
+    \includegraphics[width=0.38\textwidth]{Figs/Concept.png}
     \caption{Example of a Conceptual model}
     \label{fig:conceptual}
 \end{figure}
+
+\subsection{Conceptual models}
+As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations the variable of interest may reside in. Travel between these states is then governed by a simple mathematical expression.
+
+
+
+Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
+
+
     
-We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, Figure \ref{fig:eaBench} graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
+We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
+Figure \ref{fig:eaBench} graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Figs/EA_bench.png}
+    \includegraphics[width=0.4\textwidth]{Figs/EA_bench.png}
     \caption{Ahhhhhhhhhhhhhhhhhhhhhh}
     \label{fig:eaBench}
 \end{figure}
@@ -56,25 +63,43 @@ We can see that conceptual modelling allow us to easily build a model that in ca
 
 
 \subsection{How do we currently interpret the output of flooding models}
-Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events.
+Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events. The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate situations. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
+This process can be visualised in the flow diagram in Figure \ref{fig:flow}.
+
+\begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=0.2\textwidth]{Figs/flow.png}
+    \caption{I hate the warp enviroment}
+    \label{fig:flow}
+\end{figure}
+
+The paper by PEOPLE is a good reference for how this process is carried out in practice. Figure \ref{fig:concept_in} shows the diffreent rainfa;; data entered in to the model, and Figure\ref{fig:concept_out} show the output form there model. They then use the output form these models to make simple predictions about the effect of climate change.
+
+We think that our assintpic benchmarking process that we can do better by deriving psychical scaling laws that will can give additional insight in to flooding.
+
+\begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figs/concept_in.jpg}
+    \caption{Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm}
+    \label{fig:concept_in}
+\end{figure}
+
+\begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figs/concept_out.jpg}
+    \caption{Nooooooooooooooooooooooooooooooooooo}
+    \label{fig:concept_out}
+\end{figure}
+
+
 
 
 \subsection{Reduced PDE model}
-
-Along with conceptual models we are also intrested in analysing a PDE of flooding. The paritucaler model we are intresed in is a reduced PDE model that has been developed by Piotro as part of his PhD thesis. The model reduces the problem by 
 
 
 \section{Problem formulation and method}
 
 \subsection{A new approach to benchmarking}
-The new approach we have to Benchmarking flooding models will allows us to derive asymptotic scaling laws. 
-Such laws will allow us additional insight by telling us how the output of the model will change with respect to some perturbation of input data $\epsilon$.
-
-For example in the G2G model used by Bell we would be able to derevie a scaling law which will tell us how the flood response time vary with perturbations to the rainfall. Similarly in for the models shown in the benchmarking paper we would be able to derive scaling laws that may help to further separate the 13 different models.
-
-The new approach is two pronged first we use a numerically derive a scaling law, then use this to inform a search analytical scaling law. Note that it might note always be able to derive analytical scaling laws but it will always be possible to derive numerical ones.
-
-The process used to derive the numerical scaling laws is best demonstrated with the use of diagrams.
 
 
 \subsection{Extending the model with periodic forcing}
