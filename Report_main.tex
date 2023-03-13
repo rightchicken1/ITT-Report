@@ -2,7 +2,8 @@
 \usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage[rightcaption]{sidecap}
-\title{\Huge\textbf{Insights through asymptotics:}\\
+
+\title{\line(1,0){450} \\ \Huge\textbf{Insights through asymptotics:}\\
  \LARGE Benchmarking and analysis of climate effects on flood models}
 \author{Henry Writer }
 \date{\today}
@@ -14,7 +15,6 @@
 
 \titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
 
-\usepackage{wrapfig}
 \begin{document}
 
 \maketitle
@@ -110,10 +110,10 @@ The work outlined above is designed to be undertaken as PhD project. A potential
 Additionally, it would be beneficial if a potential student had some experience with time series analysis, and numerical PDEs.
 
 \subsection{Objectives}
-Below is a list of initial targets which shall form the bases of project.
+Below is a list of initial targets which shall form the core of the project.
 
 \begin{enumerate}
-    \item \textbf{Numerical derive scaling laws,} from conceptual models. This would require conducting a literature review to ascertain influential models that can be analyse to draw more inference from.
+    \item \textbf{Numerical derive scaling laws,} from conceptual models. This would require conducting a literature review to ascertain influential models that our benchmarking method could be applied to.
     \item \textbf{Analytically derive scaling laws,} this shall be accomplished by using numerical laws derived to inform a discretion of the conceptual models. To conduct this integration we shall use asymptotic analysis.
     \item \textbf{Apply periodic rainfall to the reduced PDE model}. To this end we will need to conduct a time series analysis of rainfall data. This shall be used to find appropriate time scales to inform the analysis of the reduced PDE model.
 \end{enumerate}
@@ -122,9 +122,9 @@ Below is a list of initial targets which shall form the bases of project.
 
 There are a number of directions this project may be extended dependent upon the interests of the student. A couple of potential avenues of extension are outlined below to show the scope of where this project.
 
-The reduced PDE model has a number of other extension which can be explored. One approch would be to use the astytotic meth of homisation, this would alow us the axpolre how a more complex soil structore will effect flooding effects. Another approch we could use to exmine the water flow in soil would be to replace the eqaution which govens the flow through the soil with a the conduet equation this would allow us to explor more complex soil denamics.
+The reduced PDE model has a number of other extension which can be explored. One approach would be to use the astytotic method of homisation, this would allow us to explore how a more complex soil structure will effect flooding events. Another approach we could use to examine the water flow in soil would be to replace the equation which governs the flow through the soil with a conduit equation this would allow us to explore channelling behaviour in the soil.
 
-We could also take a dynamical systems approch to analysisng the reduced PDE model. For example it very natural to assume that there is two possible states in which a catchment area could be in, a staturated state this would be equivalent to a wetland, and a dry/draught state. We then assume that as the land dry out it becomes less pouress so more watter flows direclty overland. We can then explore how much rainfall would have to change to transition between these states.
+We could also take a dynamical systems approach to analys ing the reduced PDE model. For example it very natural to assume that there is two possible states in which a catchment area could be in, a staturated state this would be equivalent to a wetland, and a dry/draught state. We then assume that as the land dry out it becomes less pouress so more watter flows direclty overland. We can then explore how much rainfall would have to change to transition between these states.
 
 Another promesing avenuea we could explore would be attemtping to match the conceptual models with the reduced PDE model. This would be of great intrested as the different methoglgies for building flooding models are metphoricaly existe on seprated islands. By matching the PDE modle to a conceptual model we hope to be able to connect these modles to gether.
 
