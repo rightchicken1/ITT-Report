@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor}
+\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor, multicol}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage[rightcaption]{sidecap}
 
@@ -34,35 +34,48 @@ There are currently three main approaches to flooding model. We have statistical
 We have conceptual models, these realy in creating a set of states from which water can move between this is best represented by a FIGURE. 
 Finaly we have physical models these take a continuime mechanics approch and set up a set of conservation laws and use these to drive a set PDE sytems that can be used to mdoel the flooding event.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.38\textwidth]{Figs/Concept.png}
-    \caption{Example of a Conceptual model}
-    \label{fig:conceptual}
-\end{figure}
+
 
 \subsection{Conceptual models}
-As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations the variable of interest may reside in. Travel between these states is then governed by a simple mathematical expression.
+
+ As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations the variable of interest may reside in. Travel between these states is then governed by a simple mathematical expression.
+ 
+ \begin{minipage}{0.5\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{Figs/Concept.png}
+        \caption{Example of a Conceptual model}
+        \label{fig:conceptual}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+    Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
+\end{minipage}
+
+\vspace{1cm}
+\begin{minipage}{0.3\textwidth}
+    We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
+
+    Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\textwidth]{Figs/EA_bench.png}
+        \caption{Ahhhhhhhhhhhhhhhhhhhhhh}
+        \label{fig:eaBench}
+    \end{figure}
+\end{minipage}
 
 
 
-Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
 
-
-    
-We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
-Figure \ref{fig:eaBench} graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{Figs/EA_bench.png}
-    \caption{Ahhhhhhhhhhhhhhhhhhhhhh}
-    \label{fig:eaBench}
-\end{figure}
 
 
 
 \subsection{How do we currently interpret the output of flooding models}
+
+
 Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events. The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate situations. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
 This process can be visualised in the flow diagram in Figure \ref{fig:flow}.
 
@@ -133,11 +146,22 @@ These free possible reasrech direction are not ment to be taken as a demenstarti
 
 
 \section{Impact}
-
+Like all research proposal we believe that we are carrying out novel and interesting mathematics. Additionally due to the subject of this research on climate change and namely river flooding which is one of a major extensional threat to the United Kingdom and the wider world. Any additional understanding of flooding mechanics and additional predictions will prove to be extremely valuable.
 \subsection{Mathematical impact}
+To emphasise the mathematical impact of this project here is a non-exhaustive list of the novel mathematics. 
+\begin{enumerate}
+    \item Applying assytopic methods to derive scaling laws for climate models is a potential new application for these methods.
+    \item A deep analytical analysis of conceptual modelling methods we will help to give understanding of how these commonly used techniques will behaviour.
+    \item The application of a multiple time scales analysis to the reduced PDE models is very likely to generate new and interesting problems which will need to be solved.
+\end{enumerate}
 
-\subsection*{Industrial impact}
-\subsection{}
+\subsection{Industrial impact}
+As this problem has been brought forward by the Environments Agency and ??????????? there is a clear interest in this type of work. But more concretely there is a very large motivation from practising hydrologists for a rigours analysis of the conceptual models that for the foundation of there practice. Additionally, we believe that the scaling laws that will be derived during this process may help to inform how we manage the risks of river flooding.
+
+Finally, the second strand of this project in extending the PDE model to incorporate periodic forcing we will allow us to help examine seasonl rainfall and examine/predict chages in potential flooding over the timescale of climate change. This type of analysis is challenging for industry to carry out and is prime territory for a PhD project.
+
+
+
 
 \section{References}
 
