@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  13 MAR 2023 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  14 MAR 2023 12:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,16 +316,80 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mult@nat@firstbox=\box103
 \colbreak@box=\box104
 \mc@col@check@num=\count302
+) (c:/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+) (c:/texlive/2022/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
+ (c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)) (c:/texlive/2022/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (c:/texlive/2022/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+ (c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count303
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2022/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+ (c:/texlive/2022/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count304
+))
+\c@padzeroesN=\count305
+\fc@tmpcatcode=\count306
+\@DT@modctr=\count307
+\@ordinalctr=\count308
+\@orgargctr=\count309
+\@strctr=\count310
+\@tmpstrctr=\count311
+\@DT@loopN=\count312
+\@DT@X=\count313
+) (c:/texlive/2022/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count314
+\@month=\count315
+\@year=\count316
+\c@HOUR=\count317
+\c@HOURXII=\count318
+\c@MINUTE=\count319
+\c@TOHOUR=\count320
+\c@TOMINUTE=\count321
+\c@SECOND=\count322
+\currenthour=\count323
+\currentminute=\count324
+\currentsecond=\count325
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count326
+\dayofyear=\count327
+\dayofweek=\count328
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks29
+\dt@b=\toks30
 ) (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count303
-\Gm@cntv=\count304
-\c@Gm@tempcnt=\count305
+)
+\Gm@cnth=\count329
+\Gm@cntv=\count330
+\c@Gm@tempcnt=\count331
 \Gm@bindingoffset=\dimen184
 \Gm@wd@mp=\dimen185
 \Gm@odd@mp=\dimen186
@@ -334,88 +398,87 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen189
 \Gm@layouthoffset=\dimen190
 \Gm@layoutvoffset=\dimen191
-\Gm@dimlist=\toks27
+\Gm@dimlist=\toks31
 ) (c:/texlive/2022/texmf-dist/tex/latex/sidecap/sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
- (c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
 \SC@BOXWD=\dimen192
 \SC@CAPWD=\dimen193
 \SC@tempdima=\dimen194
 \SC@tempdimb=\dimen195
-\c@SC@C=\count306
+\c@SC@C=\count332
 \SC@BOX=\box105
 ) (c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box106
-\beforetitleunit=\skip59
-\aftertitleunit=\skip60
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
 \ttl@plus=\dimen196
 \ttl@minus=\dimen197
-\ttl@toksa=\toks28
+\ttl@toksa=\toks32
 \titlewidth=\dimen198
 \titlewidthlast=\dimen199
 \titlewidthfirst=\dimen256
 ) (./Report_main.aux)
 \openout1 = `Report_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count307
+\c@lstlisting=\count333
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
+\scratchcounter=\count334
 \scratchdimen=\dimen257
 \scratchbox=\box107
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count311
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count337
 \MPscratchDim=\dimen258
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks34
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 18.
-Package microtype Info: Applying patch `item' on input line 18.
-Package microtype Info: Applying patch `toc' on input line 18.
-Package microtype Info: Applying patch `eqnum' on input line 18.
-Package microtype Info: Applying patch `footnote' on input line 18.
+LaTeX Info: Redefining \microtypecontext on input line 33.
+Package microtype Info: Applying patch `item' on input line 33.
+Package microtype Info: Applying patch `toc' on input line 33.
+Package microtype Info: Applying patch `eqnum' on input line 33.
+Package microtype Info: Applying patch `footnote' on input line 33.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 18.
+LaTeX Info: Redefining \showhyphens on input line 33.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (c:/texlive/2022/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -453,28 +516,28 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 
 (c:/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip61
-\RaggedLeftLeftskip=\skip62
-\RaggedRightLeftskip=\skip63
-\CenteringRightskip=\skip64
-\RaggedLeftRightskip=\skip65
-\RaggedRightRightskip=\skip66
-\CenteringParfillskip=\skip67
-\RaggedLeftParfillskip=\skip68
-\RaggedRightParfillskip=\skip69
-\JustifyingParfillskip=\skip70
-\CenteringParindent=\skip71
-\RaggedLeftParindent=\skip72
-\RaggedRightParindent=\skip73
-\JustifyingParindent=\skip74
+\CenteringLeftskip=\skip70
+\RaggedLeftLeftskip=\skip71
+\RaggedRightLeftskip=\skip72
+\CenteringRightskip=\skip73
+\RaggedLeftRightskip=\skip74
+\RaggedRightRightskip=\skip75
+\CenteringParfillskip=\skip76
+\RaggedLeftParfillskip=\skip77
+\RaggedRightParfillskip=\skip78
+\JustifyingParfillskip=\skip79
+\CenteringParindent=\skip80
+\RaggedLeftParindent=\skip81
+\RaggedRightParindent=\skip82
+\JustifyingParindent=\skip83
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -483,46 +546,91 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <Figs/Concept.png, id=1, 341.47575pt x 245.11575pt>
 File: Figs/Concept.png Graphic file (type png)
 <use Figs/Concept.png>
-Package pdftex.def Info: Figs/Concept.png  used on input line 46.
-(pdftex.def)             Requested size: 226.48395pt x 162.57353pt.
+Package pdftex.def Info: Figs/Concept.png  used on input line 61.
+(pdftex.def)             Requested size: 169.86296pt x 121.92921pt.
+<Figs/EA_bench.png, id=2, 291.489pt x 366.168pt>
+File: Figs/EA_bench.png Graphic file (type png)
+<use Figs/EA_bench.png>
+Package pdftex.def Info: Figs/EA_bench.png  used on input line 67.
+(pdftex.def)             Requested size: 169.86296pt x 213.38329pt.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figs/EA_bench.png, id=11, 291.489pt x 366.168pt>
-File: Figs/EA_bench.png Graphic file (type png)
-<use Figs/EA_bench.png>
-Package pdftex.def Info: Figs/EA_bench.png  used on input line 64.
-(pdftex.def)             Requested size: 203.83762pt x 256.05882pt.
 <Figs/flow.png, id=12, 227.04825pt x 523.9575pt>
 File: Figs/flow.png Graphic file (type png)
 <use Figs/flow.png>
-Package pdftex.def Info: Figs/flow.png  used on input line 84.
-(pdftex.def)             Requested size: 90.5922pt x 209.05962pt.
- [2 <./Figs/Concept.png> <./Figs/EA_bench.png>]
+Package pdftex.def Info: Figs/flow.png  used on input line 98.
+(pdftex.def)             Requested size: 71.3432pt x 164.63174pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--104
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2 <./Figs/Concept.png> <./Figs/EA_bench.png> <./Figs/flow.png>]
 <Figs/concept_in.jpg, id=16, 413.1435pt x 184.2885pt>
 File: Figs/concept_in.jpg Graphic file (type jpg)
 <use Figs/concept_in.jpg>
-Package pdftex.def Info: Figs/concept_in.jpg  used on input line 95.
-(pdftex.def)             Requested size: 226.48395pt x 101.02435pt.
+Package pdftex.def Info: Figs/concept_in.jpg  used on input line 113.
+(pdftex.def)             Requested size: 267.24939pt x 119.21526pt.
 <Figs/concept_out.jpg, id=17, 216.81pt x 187.29974pt>
 File: Figs/concept_out.jpg Graphic file (type jpg)
 <use Figs/concept_out.jpg>
-Package pdftex.def Info: Figs/concept_out.jpg  used on input line 102.
-(pdftex.def)             Requested size: 226.48395pt x 195.66737pt.
- [3 <./Figs/flow.png> <./Figs/concept_in.jpg>] [4 <./Figs/concept_out.jpg>] [5] [6] (./Report_main.aux) ) 
+Package pdftex.def Info: Figs/concept_out.jpg  used on input line 123.
+(pdftex.def)             Requested size: 140.41893pt x 121.31183pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+
+ []
+
+<Figs/Simple model.png, id=18, 431.81325pt x 283.0575pt>
+File: Figs/Simple model.png Graphic file (type png)
+<use Figs/Simple model.png>
+Package pdftex.def Info: Figs/Simple model.png  used on input line 141.
+(pdftex.def)             Requested size: 203.83417pt x 133.61578pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3 <./Figs/concept_in.jpg> <./Figs/concept_out.jpg> <./Figs/Simple model.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5] (./Report_main.aux) ) 
 Here is how much of TeX's memory you used:
- 10422 strings out of 475071
- 170918 string characters out of 5782907
- 647542 words of memory out of 5000000
- 31603 multiletter control sequences out of 15000+600000
- 480092 words of font info for 107 fonts, out of 8000000 for 9000
+ 11620 strings out of 475071
+ 190778 string characters out of 5782907
+ 679494 words of memory out of 5000000
+ 32759 multiletter control sequences out of 15000+600000
+ 480194 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,1065b,375s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Report_main.pdf (6 pages, 358366 bytes).
+ 72i,16n,80p,1107b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Report_main.pdf (5 pages, 455680 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 22554 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22559 words of extra memory for PDF output out of 24883 (max. 10000000)
 

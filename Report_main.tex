@@ -1,19 +1,34 @@
 \documentclass[11pt]{article}
-\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor, multicol}
+\usepackage{a4,caption,listings,graphicx,enumerate,amsmath,amssymb,mathtools,lipsum,graphicx,microtype,float,xcolor, multicol, caption, fancyhdr, fourier-orns, datetime}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage[rightcaption]{sidecap}
 
 \title{\line(1,0){450} \\ \Huge\textbf{Insights through asymptotics:}\\
  \LARGE Benchmarking and analysis of climate effects on flood models}
 \author{Henry Writer }
-\date{\today}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+\date{\monthyeardate\today}
 
 \usepackage{titlesec}
 \renewcommand{\thesection}{\Roman{section}}
 
+ 
 \titleformat{\section}[block]{\LARGE\bfseries\filcenter\titlerule\vspace{2mm}}{\thesection}{1em}{}
 
 \titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Insights through asymptotics}
+\fancyhead[R]{IIT-17 People and planet health}
+
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{Henry Writer}
+\fancyfoot[R]{\monthyeardate\today}
+
 
 \begin{document}
 
@@ -43,28 +58,24 @@ Finaly we have physical models these take a continuime mechanics approch and set
  \begin{minipage}{0.5\textwidth}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{Figs/Concept.png}
-        \caption{Example of a Conceptual model}
+        \includegraphics[width=0.75\textwidth]{Figs/Concept.png}
+        \captionof{figure}{Example of a Conceptual model}
         \label{fig:conceptual}
     \end{figure}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-    Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
-\end{minipage}
-
-\vspace{1cm}
-\begin{minipage}{0.3\textwidth}
-    We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
-
-    Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
-\end{minipage}
-\begin{minipage}{0.6\textwidth}
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.75\textwidth]{Figs/EA_bench.png}
-        \caption{Ahhhhhhhhhhhhhhhhhhhhhh}
+        \captionof{figure}{Ahhhhhhhhhhhhhhhhhhhhhh}
         \label{fig:eaBench}
     \end{figure}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.4\textwidth}
+    Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
+
+    We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
+
+    Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
 \end{minipage}
 
 
@@ -75,39 +86,77 @@ Finaly we have physical models these take a continuime mechanics approch and set
 
 \subsection{How do we currently interpret the output of flooding models}
 
-
-Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events. The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate situations. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
-This process can be visualised in the flow diagram in Figure \ref{fig:flow}.
-
-\begin{figure}[H]%this figure will be at the left
+\begin{minipage}{0.45\textwidth}
+    Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events. 
+    The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate situations. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
+    This process can be visualised in the flow diagram in Figure \ref{fig:flow}.
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
     \centering
-    \includegraphics[width=0.2\textwidth]{Figs/flow.png}
-    \caption{I hate the warp enviroment}
+    \includegraphics[width=0.35\textwidth]{Figs/flow.png}
+    \captionof{figure}{I hate the warp enviroment}
     \label{fig:flow}
 \end{figure}
+\end{minipage}
+\\
+
 
 The paper by PEOPLE is a good reference for how this process is carried out in practice. Figure \ref{fig:concept_in} shows the diffreent rainfa;; data entered in to the model, and Figure\ref{fig:concept_out} show the output form there model. They then use the output form these models to make simple predictions about the effect of climate change.
 
 We think that our assintpic benchmarking process that we can do better by deriving psychical scaling laws that will can give additional insight in to flooding.
 
-\begin{figure}[H]%this figure will be at the left
+\begin{minipage}{0.59\textwidth}
+    \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Figs/concept_in.jpg}
-    \caption{Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm}
+    \includegraphics[width=\textwidth]{Figs/concept_in.jpg}
+    \captionof{figure}{Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm}
     \label{fig:concept_in}
 \end{figure}
-
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.31\textwidth}
+    
 \begin{figure}[H]%this figure will be at the left
     \centering
-    \includegraphics[width=0.5\textwidth]{Figs/concept_out.jpg}
-    \caption{Nooooooooooooooooooooooooooooooooooo}
+    \includegraphics[width=\textwidth]{Figs/concept_out.jpg}
+    \captionof{figure}{Nooooooooooooooo}
     \label{fig:concept_out}
 \end{figure}
+\end{minipage}
 
 
 
 
 \subsection{Reduced PDE model}
+
+Another model of interest is a reduced PDE model. This model has been developed by a current SAMBa student Piotr as part of thesis. We believe that we can continue his work on this model by using the method of multiple scales to examine the behaviour of this model over different time scales.
+We shall briefly outline how this model works, this brief exploration will omit many of the major details this can be found in the these paper REFRENCE.
+\\
+
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Simple model.png}
+    \captionof{figure}{hmmmmmmmmmmmmmmm}
+    \label{fig:model}
+    \end{figure}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0,45\textwidth}
+     \hspace{0pt} For this model to work we reduce the complexity of the river by assuming that it travel in a straight line, with the river laying at the bottom of a v shaped channel. Additionally, we assume there are two types of equation govering the behaviour of the flow of water toward the river. 
+    The flow in the `unsaturated zone' this is where a flood has not started and the flow through the `saturated zone' this is the area where the soil has become saturated ,and a flood has formed. the equation for this system is given below,
+    
+\end{minipage}
+ \begin{align}
+    H_t=\begin{cases}
+        f(x)^{-1}[(\sigma HH_x+H)_x+p_0\times\text {rainflall}] \qquad \qquad  \ \; \text{in the unsaturated zone}\\
+        (\sigma H_x+\mu\sqrt{1+\sigma H_x}(H-1)^{5/3})+p_0 +\text{rainfall} \quad \text{in the saturated zone}
+    \end{cases}
+\end{align}
+
+
 
 
 \section{Problem formulation and method}
