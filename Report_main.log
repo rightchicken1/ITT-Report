@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  14 MAR 2023 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  14 MAR 2023 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,12 +547,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: Figs/Concept.png Graphic file (type png)
 <use Figs/Concept.png>
 Package pdftex.def Info: Figs/Concept.png  used on input line 61.
-(pdftex.def)             Requested size: 169.86296pt x 121.92921pt.
+(pdftex.def)             Requested size: 135.89174pt x 97.54337pt.
 <Figs/EA_bench.png, id=2, 291.489pt x 366.168pt>
 File: Figs/EA_bench.png Graphic file (type png)
 <use Figs/EA_bench.png>
 Package pdftex.def Info: Figs/EA_bench.png  used on input line 67.
-(pdftex.def)             Requested size: 169.86296pt x 213.38329pt.
+(pdftex.def)             Requested size: 135.89174pt x 170.70775pt.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -560,11 +560,17 @@ Package pdftex.def Info: Figs/EA_bench.png  used on input line 67.
 File: Figs/flow.png Graphic file (type png)
 <use Figs/flow.png>
 Package pdftex.def Info: Figs/flow.png  used on input line 98.
-(pdftex.def)             Requested size: 71.3432pt x 164.63174pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--104
-
- []
+(pdftex.def)             Requested size: 50.95854pt x 117.58954pt.
+<Figs/concept_in.jpg, id=13, 413.1435pt x 184.2885pt>
+File: Figs/concept_in.jpg Graphic file (type jpg)
+<use Figs/concept_in.jpg>
+Package pdftex.def Info: Figs/concept_in.jpg  used on input line 112.
+(pdftex.def)             Requested size: 267.24939pt x 119.21526pt.
+<Figs/concept_out.jpg, id=14, 216.81pt x 187.29974pt>
+File: Figs/concept_out.jpg Graphic file (type jpg)
+<use Figs/concept_out.jpg>
+Package pdftex.def Info: Figs/concept_out.jpg  used on input line 122.
+(pdftex.def)             Requested size: 140.41893pt x 121.31183pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -574,26 +580,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./Figs/Concept.png> <./Figs/EA_bench.png> <./Figs/flow.png>]
-<Figs/concept_in.jpg, id=16, 413.1435pt x 184.2885pt>
-File: Figs/concept_in.jpg Graphic file (type jpg)
-<use Figs/concept_in.jpg>
-Package pdftex.def Info: Figs/concept_in.jpg  used on input line 113.
-(pdftex.def)             Requested size: 267.24939pt x 119.21526pt.
-<Figs/concept_out.jpg, id=17, 216.81pt x 187.29974pt>
-File: Figs/concept_out.jpg Graphic file (type jpg)
-<use Figs/concept_out.jpg>
-Package pdftex.def Info: Figs/concept_out.jpg  used on input line 123.
-(pdftex.def)             Requested size: 140.41893pt x 121.31183pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
-
- []
-
 <Figs/Simple model.png, id=18, 431.81325pt x 283.0575pt>
 File: Figs/Simple model.png Graphic file (type png)
 <use Figs/Simple model.png>
-Package pdftex.def Info: Figs/Simple model.png  used on input line 141.
-(pdftex.def)             Requested size: 203.83417pt x 133.61578pt.
+Package pdftex.def Info: Figs/Simple model.png  used on input line 140.
+(pdftex.def)             Requested size: 249.13371pt x 163.31395pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -602,6 +594,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3 <./Figs/concept_in.jpg> <./Figs/concept_out.jpg> <./Figs/Simple model.png>]
+<Figs/S14_fig1.jpg, id=28, 702.625pt x 526.96875pt>
+File: Figs/S14_fig1.jpg Graphic file (type jpg)
+<use Figs/S14_fig1.jpg>
+Package pdftex.def Info: Figs/S14_fig1.jpg  used on input line 189.
+(pdftex.def)             Requested size: 167.5959pt x 125.69511pt.
+<Figs/S14_fig2.jpg, id=29, 702.625pt x 526.96875pt>
+File: Figs/S14_fig2.jpg Graphic file (type jpg)
+<use Figs/S14_fig2.jpg>
+Package pdftex.def Info: Figs/S14_fig2.jpg  used on input line 195.
+(pdftex.def)             Requested size: 167.5959pt x 125.69511pt.
+<Figs/Rainfall.png, id=30, 1003.75pt x 745.78625pt>
+File: Figs/Rainfall.png Graphic file (type png)
+<use Figs/Rainfall.png>
+Package pdftex.def Info: Figs/Rainfall.png  used on input line 212.
+(pdftex.def)             Requested size: 203.83417pt x 151.44194pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -609,7 +617,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
+[4 <./Figs/S14_fig1.jpg> <./Figs/S14_fig2.jpg> <./Figs/Rainfall.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -617,20 +625,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5] (./Report_main.aux) ) 
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6] (./Report_main.aux) ) 
 Here is how much of TeX's memory you used:
- 11620 strings out of 475071
- 190778 string characters out of 5782907
- 679494 words of memory out of 5000000
- 32759 multiletter control sequences out of 15000+600000
+ 11644 strings out of 475071
+ 191257 string characters out of 5782907
+ 679518 words of memory out of 5000000
+ 32780 multiletter control sequences out of 15000+600000
  480194 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,16n,80p,1107b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Report_main.pdf (5 pages, 455680 bytes).
+Output written on Report_main.pdf (6 pages, 557209 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 22559 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22574 words of extra memory for PDF output out of 24883 (max. 10000000)
 

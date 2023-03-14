@@ -58,24 +58,24 @@ Finaly we have physical models these take a continuime mechanics approch and set
  \begin{minipage}{0.5\textwidth}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\textwidth]{Figs/Concept.png}
+        \includegraphics[width=0.6\textwidth]{Figs/Concept.png}
         \captionof{figure}{Example of a Conceptual model}
         \label{fig:conceptual}
     \end{figure}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\textwidth]{Figs/EA_bench.png}
+        \includegraphics[width=0.6\textwidth]{Figs/EA_bench.png}
         \captionof{figure}{Ahhhhhhhhhhhhhhhhhhhhhh}
         \label{fig:eaBench}
     \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.4\textwidth}
-    Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
+    \qquad Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
 
-    We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
+    \qquad We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
 
-    Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
+    \qquad Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
 \end{minipage}
 
 
@@ -95,13 +95,12 @@ Finaly we have physical models these take a continuime mechanics approch and set
 \begin{minipage}{0.45\textwidth}
     \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{Figs/flow.png}
+    \includegraphics[width=0.25\textwidth]{Figs/flow.png}
     \captionof{figure}{I hate the warp enviroment}
     \label{fig:flow}
 \end{figure}
 \end{minipage}
-\\
-
+\vspace{5pt}
 
 The paper by PEOPLE is a good reference for how this process is carried out in practice. Figure \ref{fig:concept_in} shows the diffreent rainfa;; data entered in to the model, and Figure\ref{fig:concept_out} show the output form there model. They then use the output form these models to make simple predictions about the effect of climate change.
 
@@ -130,12 +129,12 @@ We think that our assintpic benchmarking process that we can do better by derivi
 
 
 \subsection{Reduced PDE model}
-
-Another model of interest is a reduced PDE model. This model has been developed by a current SAMBa student Piotr as part of thesis. We believe that we can continue his work on this model by using the method of multiple scales to examine the behaviour of this model over different time scales.
+Another model of interest is a reduced PDE model. This model has been developed by a current SAMBa student Piotr as part of thesis. 
+We believe that we can continue his work on this model by using the method of multiple scales to examine the behaviour of this model over different time scales.
 We shall briefly outline how this model works, this brief exploration will omit many of the major details this can be found in the these paper REFRENCE.
-\\
 
-\begin{minipage}{0.45\textwidth}
+\vspace{5pt}
+\begin{minipage}{0.55\textwidth}
     \begin{figure}[H]%this figure will be at the left
     \centering
     \includegraphics[width=\textwidth]{Figs/Simple model.png}
@@ -144,27 +143,88 @@ We shall briefly outline how this model works, this brief exploration will omit 
     \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0,45\textwidth}
-     \hspace{0pt} For this model to work we reduce the complexity of the river by assuming that it travel in a straight line, with the river laying at the bottom of a v shaped channel. Additionally, we assume there are two types of equation govering the behaviour of the flow of water toward the river. 
+\begin{minipage}{0.35\textwidth}
+    \qquad For this model to work we reduce the complexity of the river by assuming that it travel in a straight line, with the river laying at the bottom of a v shaped channel. Additionally, we assume there are two types of equation govering the behaviour of the flow of water toward the river. 
     The flow in the `unsaturated zone' this is where a flood has not started and the flow through the `saturated zone' this is the area where the soil has become saturated ,and a flood has formed. the equation for this system is given below,
     
 \end{minipage}
+
  \begin{align}
     H_t=\begin{cases}
-        f(x)^{-1}[(\sigma HH_x+H)_x+p_0\times\text {rainflall}] \qquad \qquad  \ \; \text{in the unsaturated zone}\\
-        (\sigma H_x+\mu\sqrt{1+\sigma H_x}(H-1)^{5/3})+p_0 +\text{rainfall} \quad \text{in the saturated zone}
+        f(x)^{-1}[(\sigma HH_x+H)_x+p_0\times\text {rainflall}] \qquad \qquad  \ \; \text{in the unsaturated zone},\\
+        (\sigma H_x+\mu\sqrt{1+\sigma H_x}(H-1)^{5/3})+p_0 +\text{rainfall} \quad \text{in the saturated zone},
     \end{cases}
 \end{align}
+
+where $H(x,t)$ is the hight of the fluid at position $x$ and time $t$.
+
 
 
 
 
 \section{Problem formulation and method}
-
+The core of this program of work will take two forms. First we will develop this aentopitic benchmarking tool, and secondly we will explore expansions to the reduced PDE model. 
 \subsection{A new approach to benchmarking}
+As we discussed earlier there is work to be done in improving the insights which we can get from conceptual models. The plane will be to derive assytopic scaling laws for these conceptual models. These laws will be able to tell us how some desired quantity is scaled based upon some input. So for example from the reduced PDE model (1) we would wish to develop a scaling law of the following form, $H(r)$, where is the rainfall. 
+
+\vspace{3pt}
+\noindent\begin{minipage}{0.53\textwidth}
+    \qquad However deriving the scaling laws directly is likely to be difficult so we first approach the problem numerically to demonstrate this procedure we will use the reduced PDE model. 
+    
+    \qquad First we pick some rainfall function in this case we we chose, \begin{align}
+        r = r_0\epsilon,
+    \end{align}
+    where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of alpha. Next we fix some time in this case we pick time such that we are in the saturated and a flood has formed. 
+    
+    \qquad Next we then take these values of $H(r)$ and plot these and then attempt to fit some function to them. In this case this can be seen in Figure \ref{fig:S14_fig2} which is loglog plot form this we get that, \begin{align}
+    H(r)=r_0^{\epsilon}.
+    \end{align}
+    
+    \qquad We will confirm this by asstotpicly examining the model, unfortilay during the preliminary investigations which we carried out during ITT17 we did not have time analytical derive the scaling law for this model
+    \end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.37\textwidth}
+    \begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=\textwidth]{Figs/S14_fig1.jpg}
+    \captionof{figure}{hmmmmmmmmmm}
+    \label{fig:S14_fig1}
+    \end{figure}
+    \begin{figure}[H]%this figure will be at the left
+    \centering
+    \includegraphics[width=\textwidth]{Figs/S14_fig2.jpg}
+    \captionof{figure}{hmmmmmm}
+    \label{fig:S14_fig2}
+    \end{figure}
+\end{minipage}
+
+\vspace{5pt}
+
+\qquad The two reasons why we wish to numerically, first is that it will significantly speed up the search for analytically derived laws as we will be able to use it as a ansatz. Secondly there is scope to develop the numerical work flow into a R package that will allow industry to test there models.
 
 
-\subsection{Extending the model with periodic forcing}
+
+\subsection{Extending the model with multiple time scales}
+
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Rainfall.png}
+    \captionof{figure}{ghsjhfj}
+    \label{fig:rainfall}
+    \end{figure}
+\end{minipage}
+\hspace{0.05\textwidth}
+\indent\begin{minipage}{0.45\textwidth}
+    The second strand of the proposal will focus on extending the reduced PDE model with to accommodate more complex forms of rainfall functions. Currently the model has only eb explored with constant rainfall, this is clearly not hwo the weather acts in real world see Figure \ref{fig:rainfall} which is the monthly rainfall for the UK. 
+    Clearly this rainfall is not constant and in fact appears to have behaviour working on some short time scale, the seasonal difference in rainfall, and behaviour working on some larger multi year time scale.
+
+    \qquad We should hopefully be able to apple the asstoptic mehtod of multiple time scales to improve the solutions of this problem.
+\end{minipage}
+
+\vspace{5pt}
+
+
 
 \section{Objectives and strategy}
 
@@ -184,7 +244,7 @@ Below is a list of initial targets which shall form the core of the project.
 
 There are a number of directions this project may be extended dependent upon the interests of the student. A couple of potential avenues of extension are outlined below to show the scope of where this project.
 
-The reduced PDE model has a number of other extension which can be explored. One approach would be to use the astytotic method of homisation, this would allow us to explore how a more complex soil structure will effect flooding events. Another approach we could use to examine the water flow in soil would be to replace the equation which governs the flow through the soil with a conduit equation this would allow us to explore channelling behaviour in the soil.
+ The reduced PDE model has a number of other extension which can be explored. One approach would be to use the astytotic method of homisation, this would allow us to explore how a more complex soil structure will effect flooding events. Another approach we could use to examine the water flow in soil would be to replace the equation which governs the flow through the soil with a conduit equation this would allow us to explore channelling behaviour in the soil.
 
 We could also take a dynamical systems approach to analys ing the reduced PDE model. For example it very natural to assume that there is two possible states in which a catchment area could be in, a staturated state this would be equivalent to a wetland, and a dry/draught state. We then assume that as the land dry out it becomes less pouress so more watter flows direclty overland. We can then explore how much rainfall would have to change to transition between these states.
 
