@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  15 MAR 2023 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.20)  15 MAR 2023 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,12 +800,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <Figs/Concept.png, id=1, 341.47575pt x 245.11575pt>
 File: Figs/Concept.png Graphic file (type png)
 <use Figs/Concept.png>
-Package pdftex.def Info: Figs/Concept.png  used on input line 66.
+Package pdftex.def Info: Figs/Concept.png  used on input line 68.
 (pdftex.def)             Requested size: 135.89174pt x 97.54337pt.
 <Figs/EA_bench.png, id=2, 291.489pt x 366.168pt>
 File: Figs/EA_bench.png Graphic file (type png)
 <use Figs/EA_bench.png>
-Package pdftex.def Info: Figs/EA_bench.png  used on input line 72.
+Package pdftex.def Info: Figs/EA_bench.png  used on input line 74.
 (pdftex.def)             Requested size: 135.89174pt x 170.70775pt.
  [1
 
@@ -813,18 +813,8 @@ Package pdftex.def Info: Figs/EA_bench.png  used on input line 72.
 <Figs/flow.png, id=12, 227.04825pt x 523.9575pt>
 File: Figs/flow.png Graphic file (type png)
 <use Figs/flow.png>
-Package pdftex.def Info: Figs/flow.png  used on input line 103.
-(pdftex.def)             Requested size: 50.95854pt x 117.58954pt.
-<Figs/concept_in.jpg, id=13, 413.1435pt x 184.2885pt>
-File: Figs/concept_in.jpg Graphic file (type jpg)
-<use Figs/concept_in.jpg>
-Package pdftex.def Info: Figs/concept_in.jpg  used on input line 117.
-(pdftex.def)             Requested size: 267.24939pt x 119.21526pt.
-<Figs/concept_out.jpg, id=14, 216.81pt x 187.29974pt>
-File: Figs/concept_out.jpg Graphic file (type jpg)
-<use Figs/concept_out.jpg>
-Package pdftex.def Info: Figs/concept_out.jpg  used on input line 127.
-(pdftex.def)             Requested size: 140.41893pt x 121.31183pt.
+Package pdftex.def Info: Figs/flow.png  used on input line 100.
+(pdftex.def)             Requested size: 62.28342pt x 143.72499pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -834,11 +824,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./Figs/Concept.png> <./Figs/EA_bench.png> <./Figs/flow.png>]
+<Figs/concept_in.jpg, id=16, 413.1435pt x 184.2885pt>
+File: Figs/concept_in.jpg Graphic file (type jpg)
+<use Figs/concept_in.jpg>
+Package pdftex.def Info: Figs/concept_in.jpg  used on input line 115.
+(pdftex.def)             Requested size: 271.7835pt x 121.23709pt.
+<Figs/concept_out.jpg, id=17, 216.81pt x 187.29974pt>
+File: Figs/concept_out.jpg Graphic file (type jpg)
+<use Figs/concept_out.jpg>
+Package pdftex.def Info: Figs/concept_out.jpg  used on input line 125.
+(pdftex.def)             Requested size: 135.89174pt x 117.40213pt.
 <Figs/Simple model.png, id=18, 431.81325pt x 283.0575pt>
 File: Figs/Simple model.png Graphic file (type png)
 <use Figs/Simple model.png>
-Package pdftex.def Info: Figs/Simple model.png  used on input line 145.
-(pdftex.def)             Requested size: 249.13371pt x 163.31395pt.
+Package pdftex.def Info: Figs/Simple model.png  used on input line 143.
+(pdftex.def)             Requested size: 271.7835pt x 178.16734pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -851,17 +851,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Figs/S14_fig1.jpg, id=28, 702.625pt x 526.96875pt>
 File: Figs/S14_fig1.jpg Graphic file (type jpg)
 <use Figs/S14_fig1.jpg>
-Package pdftex.def Info: Figs/S14_fig1.jpg  used on input line 194.
+Package pdftex.def Info: Figs/S14_fig1.jpg  used on input line 190.
 (pdftex.def)             Requested size: 167.5959pt x 125.69511pt.
 <Figs/S14_fig2.jpg, id=29, 702.625pt x 526.96875pt>
 File: Figs/S14_fig2.jpg Graphic file (type jpg)
 <use Figs/S14_fig2.jpg>
-Package pdftex.def Info: Figs/S14_fig2.jpg  used on input line 200.
+Package pdftex.def Info: Figs/S14_fig2.jpg  used on input line 196.
 (pdftex.def)             Requested size: 167.5959pt x 125.69511pt.
 <Figs/Rainfall.png, id=30, 1003.75pt x 745.78625pt>
 File: Figs/Rainfall.png Graphic file (type png)
 <use Figs/Rainfall.png>
-Package pdftex.def Info: Figs/Rainfall.png  used on input line 217.
+Package pdftex.def Info: Figs/Rainfall.png  used on input line 213.
 (pdftex.def)             Requested size: 203.83417pt x 151.44194pt.
 
 
@@ -871,7 +871,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4 <./Figs/S14_fig1.jpg> <./Figs/S14_fig2.jpg> <./Figs/Rainfall.png>]
+[4 <./Figs/S14_fig1.jpg> <./Figs/S14_fig2.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -879,12 +879,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
+[5 <./Figs/Rainfall.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -893,6 +888,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -906,15 +906,15 @@ Package logreq Info: Writing requests to 'Report_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19271 strings out of 475071
- 344579 string characters out of 5782907
- 1242013 words of memory out of 5000000
- 40318 multiletter control sequences out of 15000+600000
- 481465 words of font info for 117 fonts, out of 8000000 for 9000
+ 19291 strings out of 475071
+ 345049 string characters out of 5782907
+ 1242187 words of memory out of 5000000
+ 40326 multiletter control sequences out of 15000+600000
+ 481786 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,16n,80p,1107b,1443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,16n,80p,1107b,1704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Report_main.pdf (7 pages, 600167 bytes).
+Output written on Report_main.pdf (7 pages, 603956 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream

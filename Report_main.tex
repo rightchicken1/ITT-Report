@@ -41,91 +41,89 @@
 
 \section{Background}
 
-There is currently unmistakable evidence that the climate of the planet is changing. We currently do not understand what the potential outcomes of these changes may be. One route we have to understand these changes takes the form of models these models then can be used to help us predict the future impact of climate change.
+There is currently unmistakable evidence that the climate of the planet is changing. We currently have a limited understand of what the potential outcomes of these changes may be. One route we have to understand these changes takes the form of mthamtical models, these then can be used to help us predict the future impact of climate change.
 
-In the United Kingdom one of the largest potential effects of climate change we will take the form of river flooding. The government cost the 2015/16 floods at 1.6 billion pounds. This number does not take into account the human toll of this event. Additionally, it appears that the number and severity of flooding is increasing. 
+In the United Kingdom one of the largest potential effects of climate change we will encounter takes the form of river flooding. The government estimate that the cost of the 2015/16 floods is approximately 1.6 billion pounds. This number does not take into account the human toll of this event. 
 
 
-This has motivated the hydrological community in increasing the understanding of river flooding. This has been done by developing a 'zoo' of potential flooding models. However, there are two problems regarding this large group of models. One since there is so many it is hard to separate them REF. 
-Secondly we believe there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using asymptotic analysis.
+Additionally, it appears that the number and severity of flooding is increasing. This has motivated the hydrological community in increasing the understanding of river flooding. This has been done by developing a `zoo' of potential flooding models. However, there are two problems regarding this large group of models, firstly since there is so many it is hard to separate them to decided which would be the most appropriate \cite{neelz2013benchmarking}. 
+Secondly there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using asymptotic analysis.
+
 
 \subsection{How do we model river flooding}
-There are currently three main approaches to flooding model. We have statistical models this realy on using statistical method to fit models to data and use statistical models to make inferences about the future. 
-We have conceptual models, these realy in creating a set of states from which water can move between this is best represented by a FIGURE. 
-Finaly we have physical models these take a continuime mechanics approch and set up a set of conservation laws and use these to drive a set PDE sytems that can be used to mdoel the flooding event.
+There are currently three main approaches to building flooding model. We have statistical models this relies on using statistical method to fit models to data and use statistical models to make inferences about the future, this class of models is not a major focus of this project. 
+
+The other two classes of models which we will focus are efforts on will be conceptual models, these rely on creating a set of states from which the quantity of interest can move between this is best represented by a Figure \ref{fig:conceptual}. 
+The other modelling technique of interest we have physical models these take a continuing mechanics approach and set up a set of conservation laws and use these to drive a set PDE equations that can then be used to model the flooding event.
 
 
 
 \subsection{Conceptual models}
 
- As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations the variable of interest may reside in. Travel between these states is then governed by a simple mathematical expression.
+ As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding and simplify it down to a set of possible states/locations where a quantity of interest may reside in. Travel between these states is then governed by a simple mathematical expression. These models are then trained on a real life example to choose parameter that control the mathematical expressions.
  
  \begin{minipage}{0.5\textwidth}
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{Figs/Concept.png}
-        \captionof{figure}{Example of a Conceptual model}
+        \captionof{figure}{Example of a Conceptual model from \cite{https://doi.org/10.1002/joc.1539}}
         \label{fig:conceptual}
     \end{figure}
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{Figs/EA_bench.png}
-        \captionof{figure}{Ahhhhhhhhhhhhhhhhhhhhhh}
+        \captionof{figure}{This demonstrate the challenges with separating different flooding models from each other. This figure is from \cite{neelz2013benchmarking}}
         \label{fig:eaBench}
     \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.4\textwidth}
-    \qquad Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system precipitation and how the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged.
+    \qquad Figure \ref{fig:conceptual} gives a diagrammatic example of a conceptual model this model show how rain water might flow through a catchment area. It shows rain entering the system via precipitation and then the path it might take, either evaporating immediately, or by flowing into surface or groundwater storage, before being eventually discharged into a stream.
 
-    \qquad We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with such in designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in REFRENCE, 
-
-    \qquad Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed assytopic benchmarking process.
+    \qquad We can see that conceptual modelling allow us to easily build a model that in can incorporate many aspects of a system. However, with how relatively simple it is to designing these models means that there is a `zoo' of similar models from which we could use to model a potential river catchment area. This issue of benchmarking these models to determine which one is mots suitable for a given situation are discussed in \cite{neelz2013benchmarking}. 
+    Figure \ref{fig:eaBench}  graphically demonstrates the challenge posed in differentiating flooding models. This is one of the major motivations of the proposed asymptotic benchmarking process.
 \end{minipage}
-
-
-
-
 
 
 
 \subsection{How do we currently interpret the output of flooding models}
 
-\begin{minipage}{0.45\textwidth}
+\begin{minipage}{0.35\textwidth}
     Another motivation to creating a methodology to derive scaling laws from conceptual models is in the predication of future flooding events. 
-    The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate situations. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
+    The method currently used to give predictions of future flooding evolves taking a handful of different data sets that model a potential climate under a variety of possible climate scenarios. These data sets are then feed in to a conceptual model then these outcomes are used to draw inferences about future floods.
     This process can be visualised in the flow diagram in Figure \ref{fig:flow}.
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.45\textwidth}
+\begin{minipage}{0.55\textwidth}
     \begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{Figs/flow.png}
-    \captionof{figure}{I hate the warp enviroment}
+    \captionof{figure}{Flow chart demonstrate the way in which outcomes of climate change are used to give estimat}
     \label{fig:flow}
 \end{figure}
 \end{minipage}
+
 \vspace{5pt}
 
-The paper by PEOPLE is a good reference for how this process is carried out in practice. Figure \ref{fig:concept_in} shows the diffreent rainfa;; data entered in to the model, and Figure\ref{fig:concept_out} show the output form there model. They then use the output form these models to make simple predictions about the effect of climate change.
+The paper \cite{BELL201289} is a good reference for how this process is carried out in practice. Figure \ref{fig:concept_in} shows the different rainfall data that is then entered in to the model, and Figure\ref{fig:concept_out} show the output form there model. They then use the output form these models to make simple predictions about the effect of climate change.
 
-We think that our assintpic benchmarking process that we can do better by deriving psychical scaling laws that will can give additional insight in to flooding.
+We think that our asymptotic benchmarking process that we can do better by deriving psychical scaling laws that will can give additional insight in to how flooding events will scale with different environmental conditions.
 
-\begin{minipage}{0.59\textwidth}
+\begin{minipage}{0.6\textwidth}
     \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Figs/concept_in.jpg}
-    \captionof{figure}{Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm}
+    \captionof{figure}{Shows how the different data sets change the rainfall which is entered in the flooding model. This figure is taken from~\cite{BELL201289}.}
     \label{fig:concept_in}
 \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.31\textwidth}
+\begin{minipage}{0.3\textwidth}
     
 \begin{figure}[H]%this figure will be at the left
     \centering
     \includegraphics[width=\textwidth]{Figs/concept_out.jpg}
-    \captionof{figure}{Nooooooooooooooo}
+    \captionof{figure}{Show the effect of the different rainfalls on the outcomes on the model. This figure is taken from~\cite{BELL201289}.}
     \label{fig:concept_out}
 \end{figure}
 \end{minipage}
@@ -135,48 +133,46 @@ We think that our assintpic benchmarking process that we can do better by derivi
 
 \subsection{Reduced PDE model}
 Another model of interest is a reduced PDE model. This model has been developed by a current SAMBa student Piotr as part of thesis. 
-We believe that we can continue his work on this model by using the method of multiple scales to examine the behaviour of this model over different time scales.
-We shall briefly outline how this model works, this brief exploration will omit many of the major details this can be found in the these paper REFRENCE.
+We believe that we can continue this work and develop this model further by using asymptotic methods.
+We shall briefly outline how this model works, this brief exploration will omit many of the major details this can be found in the these papers~\cite{pp1},\cite{pp2} and~\cite{pp3}.
 
 \vspace{5pt}
-\begin{minipage}{0.55\textwidth}
+\begin{minipage}{0.6\textwidth}
     \begin{figure}[H]%this figure will be at the left
     \centering
     \includegraphics[width=\textwidth]{Figs/Simple model.png}
-    \captionof{figure}{hmmmmmmmmmmmmmmm}
+    \captionof{figure}{This plot gives a demonstrates how the PDE model works. This figure is form~\cite{pp2}}
     \label{fig:model}
     \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.35\textwidth}
-    \qquad For this model to work we reduce the complexity of the river by assuming that it travel in a straight line, with the river laying at the bottom of a v shaped channel. Additionally, we assume there are two types of equation govering the behaviour of the flow of water toward the river. 
-    The flow in the `unsaturated zone' this is where a flood has not started and the flow through the `saturated zone' this is the area where the soil has become saturated ,and a flood has formed. the equation for this system is given below,
+\begin{minipage}{0.3\textwidth}
+    \qquad For this model to work we reduce the complexity of the river by assuming that it travel in a straight line, with the river laying at the bottom of a v shaped channel. Additionally, we assume there are two types of equation governing the behaviour of the flow of water toward the river. 
+    The flow in the `unsaturated zone' this is where a flood has not started the water is contained below ground level. The other region the water travels through is the `saturated zone' this is the area where the soil has become saturated, and a flood has formed. The equation for this system is given below,
     
 \end{minipage}
 
  \begin{align}
     H_t=\begin{cases}
         f(x)^{-1}[(\sigma HH_x+H)_x+p_0\times\text {rainflall}] \qquad \qquad  \ \; \text{in the unsaturated zone},\\
-        (\sigma H_x+\mu\sqrt{1+\sigma H_x}(H-1)^{5/3})+p_0 +\text{rainfall} \quad \text{in the saturated zone},
+        (\sigma H_x+\mu\sqrt{1+\sigma H_x}(H-1)^{5/3})+p_0 +\text{rainfall} \quad \text{in the saturated zone}, \label{reduced PDE}
     \end{cases}
 \end{align}
 
 where $H(x,t)$ is the hight of the fluid at position $x$ and time $t$.
 
 
-
-
-
 \section{Problem formulation and method}
-The core of this program of work will take two forms. First we will develop this aentopitic benchmarking tool, and secondly we will explore expansions to the reduced PDE model. 
+The core of this program of work will take two forms. First we will develop this asymptotic benchmarking tool, and secondly we will explore expansions to the reduced PDE model. 
 \subsection{A new approach to benchmarking}
-As we discussed earlier there is work to be done in improving the insights which we can get from conceptual models. The plane will be to derive assytopic scaling laws for these conceptual models. These laws will be able to tell us how some desired quantity is scaled based upon some input. So for example from the reduced PDE model (1) we would wish to develop a scaling law of the following form, $H(r)$, where is the rainfall. 
+As we discussed earlier there is work to be done in improving the insights which we can get from conceptual models. The plane will be to derive asymptotic scaling laws for these conceptual models. These laws will be able to tell us how some desired quantity is scaled based upon some input. So for example from the reduced PDE model (\ref{reduced PDE}) we would wish to develop a scaling law of the following form, $H(r(t))$, where $r(t)$ is some changing rainfall. 
 
-\vspace{3pt}
+\vspace{5pt}
+
 \noindent\begin{minipage}{0.53\textwidth}
-    \qquad However deriving the scaling laws directly is likely to be difficult so we first approach the problem numerically to demonstrate this procedure we will use the reduced PDE model. 
+    \qquad However deriving the scaling laws directly from the underlying models is likely to be difficult. We will first approach the problem numerically, this numerical scaling law can then be used to derive the analytical scaling law.
     
-    \qquad First we pick some rainfall function in this case we we chose, \begin{align}
+    \qquad To demonstrate this procedure we will use the reduced PDE model. First we pick some rainfall function in this case we we chose, \begin{align}
         r = r_0\epsilon,
     \end{align}
     where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of alpha. Next we fix some time in this case we pick time such that we are in the saturated and a flood has formed. 
@@ -277,16 +273,6 @@ Finally, the second strand of this project in extending the PDE model to incorpo
 
 
 
-
-
-
-\cite{pp1}
-
-\cite{pp2}
-
-\cite{pp3}
-
-\cite{BELL201289}
 
 \printbibliography
 
