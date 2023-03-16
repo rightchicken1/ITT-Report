@@ -163,9 +163,9 @@ where $H(x,t)$ is the hight of the fluid at position $x$ and time $t$.
 
 
 \section{Problem formulation and method}
-The core of this program of work will take two forms. First we will develop this asymptotic benchmarking tool, and secondly we will explore expansions to the reduced PDE model. 
+The core of this program of work will take two forms. First we will develop this asymptotic benchmarking tool, and secondly we will explore extensions to the reduced PDE model. 
 \subsection{A new approach to benchmarking}
-As we discussed earlier there is work to be done in improving the insights which we can get from conceptual models. The plane will be to derive asymptotic scaling laws for these conceptual models. These laws will be able to tell us how some desired quantity is scaled based upon some input. So for example from the reduced PDE model (\ref{reduced PDE}) we would wish to develop a scaling law of the following form, $H(r(t))$, where $r(t)$ is some changing rainfall. 
+As we discussed earlier there is work to be done in improving the insights which we can get from conceptual models. The plan will be to derive asymptotic scaling laws for these conceptual models. These laws will be able to tell us how some desired quantity is scaled based upon some input. So for example from the reduced PDE model (\ref{reduced PDE}) we would wish to develop a scaling law of the following form, $H(r(t))$, where $r(t)$ is some changing rainfall. 
 
 \vspace{5pt}
 
@@ -175,33 +175,33 @@ As we discussed earlier there is work to be done in improving the insights which
     \qquad To demonstrate this procedure we will use the reduced PDE model. First we pick some rainfall function in this case we we chose, \begin{align}
         r = r_0\epsilon,
     \end{align}
-    where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of alpha. Next we fix some time in this case we pick time such that we are in the saturated and a flood has formed. 
+    where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of alpha. Next we fix some time in this case we pick time such that the groudn is saturated and a flood has formed. 
     
-    \qquad Next we then take these values of $H(r)$ and plot these and then attempt to fit some function to them. In this case this can be seen in Figure \ref{fig:S14_fig2} which is loglog plot form this we get that, \begin{align}
+    \qquad Next we then take these values of $H(r)$ and attempt to fit some function to them. In this case this can be seen in Figure \ref{fig:S14_fig2} which is loglog plot form this we get that $H(r)$ scales form some power law more precisely, \begin{align}
     H(r)=r_0^{\epsilon}.
     \end{align}
     
-    \qquad We will confirm this by asstotpicly examining the model, unfortilay during the preliminary investigations which we carried out during ITT17 we did not have time analytical derive the scaling law for this model
+    \qquad We will confirm this by asymptotically examining the model, unfortunately during the preliminary investigations which we carried out during ITT17 we did not have time analytical derive the scaling law for this model.
     \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.37\textwidth}
     \begin{figure}[H]%this figure will be at the left
     \centering
     \includegraphics[width=\textwidth]{Figs/S14_fig1.jpg}
-    \captionof{figure}{hmmmmmmmmmm}
+    \captionof{figure}{This figure shows how the $H(x,t)$ given different rainfall.}
     \label{fig:S14_fig1}
     \end{figure}
     \begin{figure}[H]%this figure will be at the left
     \centering
     \includegraphics[width=\textwidth]{Figs/S14_fig2.jpg}
-    \captionof{figure}{hmmmmmm}
+    \captionof{figure}{A loglog plot used to fit derive the numerical scaling law.}
     \label{fig:S14_fig2}
     \end{figure}
 \end{minipage}
 
 \vspace{5pt}
 
-\qquad The two reasons why we wish to numerically, first is that it will significantly speed up the search for analytically derived laws as we will be able to use it as a ansatz. Secondly there is scope to develop the numerical work flow into a R package that will allow industry to test there models.
+\qquad The two reasons why we wish to do numerical analysis first is that it will significantly speed up the search for analytically derived laws, we will be able to use the numerically derived law as a ansatz. Secondly there is scope to develop the numerical work flow into a R package that will allow industry to test there models quickly and independently.
 
 
 
@@ -211,23 +211,25 @@ As we discussed earlier there is work to be done in improving the insights which
     \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Figs/Rainfall.png}
-    \captionof{figure}{ghsjhfj}
+    \captionof{figure}{Monthly rainfall data for the UK taken over a period 2024-2022 taken from the Met Office.}
     \label{fig:rainfall}
     \end{figure}
 \end{minipage}
 \hspace{0.05\textwidth}
 \indent\begin{minipage}{0.45\textwidth}
-    The second strand of the proposal will focus on extending the reduced PDE model with to accommodate more complex forms of rainfall functions. Currently the model has only eb explored with constant rainfall, this is clearly not hwo the weather acts in real world see Figure \ref{fig:rainfall} which is the monthly rainfall for the UK. 
-    Clearly this rainfall is not constant and in fact appears to have behaviour working on some short time scale, the seasonal difference in rainfall, and behaviour working on some larger multi year time scale.
+    The second strand of the proposal will focus on extending the reduced PDE model to accommodate more complex forms of rainfall functions. Currently the model has only been explored with constant rainfall, this is clearly not hwo the weather acts in real world see Figure \ref{fig:rainfall} which is the monthly rainfall for the UK. 
+    Clearly this rainfall is not constant and in fact appears to have behaviour working on some short time scale, the seasonal difference in rainfall, and behaviour working on some larger multiple year time scale.
 
-    \qquad We should hopefully be able to apple the asstoptic mehtod of multiple time scales to improve the solutions of this problem.
+    \qquad We should hopefully be able to explore this behaviour using the asymptotic method of multiple time scales to get more complex predictions from the model.
 \end{minipage}
 
 \vspace{5pt}
 \subsection{People}
 Below are the group of people who would make a the supervisory team for this project.
 \begin{itemize}
-    \item Primary supervisor \textbf{Dr Phillipe Trinh}
+    \item Primary supervisor: \textbf{Dr. Philipp Trinh}.
+    \item Secondary supervisor: \textbf{Dr Lisa Kreusser}.
+    \item External collaborator: \textbf{Professor Rob Lamb} with the JBA group.
 \end{itemize}
 
 
@@ -241,22 +243,22 @@ Additionally, it would be beneficial if a potential student had some experience 
 Below is a list of initial targets which shall form the core of the project.
 
 \begin{enumerate}
-    \item \textbf{Numerical derive scaling laws,} from conceptual models. This would require conducting a literature review to ascertain influential models that our benchmarking method could be applied to.
-    \item \textbf{Analytically derive scaling laws,} this shall be accomplished by using numerical laws derived to inform a discretion of the conceptual models. To conduct this integration we shall use asymptotic analysis.
-    \item \textbf{Apply periodic rainfall to the reduced PDE model}. To this end we will need to conduct a time series analysis of rainfall data. This shall be used to find appropriate time scales to inform the analysis of the reduced PDE model.
+    \item \textbf{Numerical derive scaling laws,} from conceptual models. This would require first conducting a literature review to ascertain influential models that our benchmarking method could be applied to. Then apply the benchmarking process as outlined earlier to these models, to derive numerical scaling laws.
+    \item \textbf{Analytically derive scaling laws,} this shall be accomplished by using numerical laws derived earlier to inform a exploration of the conceptual models.
+    \item \textbf{Apply periodic rainfall to the reduced PDE model}. To this end we will need to conduct a time series analysis of rainfall data, from variety of source to allow us to work out appropriate rainfall functions and time scales to inform the analysis of the reduced PDE model.
 \end{enumerate}
 
 \subsection{Potential future objectives}
 
-There are a number of directions this project may be extended dependent upon the interests of the student. A couple of potential avenues of extension are outlined below to show the scope of where this project.
+There are a number of directions this project may be extended dependent upon the interests of the student. A couple of potential avenues of extension are outlined below to show the scope of where this project mighty lead.
 
- The reduced PDE model has a number of other extension which can be explored. One approach would be to use the astytotic method of homisation, this would allow us to explore how a more complex soil structure will effect flooding events. Another approach we could use to examine the water flow in soil would be to replace the equation which governs the flow through the soil with a conduit equation this would allow us to explore channelling behaviour in the soil.
+ The reduced PDE model has a number of other extension which can be explored. One approach would be to use the asymptotic method of homogenization, this would allow us to explore how a more complex soil structure how this will effect flooding events. Another approach we could use to examine the flow in soil would be to replace the equation which governs the flow through the soil with a equation that would allow us to explore channelling behaviour in the soil.
 
-We could also take a dynamical systems approach to analys ing the reduced PDE model. For example it very natural to assume that there is two possible states in which a catchment area could be in, a staturated state this would be equivalent to a wetland, and a dry/draught state. We then assume that as the land dry out it becomes less pouress so more watter flows direclty overland. We can then explore how much rainfall would have to change to transition between these states.
+We could also take a dynamical systems approach to the analysis of the reduced PDE model. For example it is very natural to assume that there are two possible states in which a catchment area could be in, a saturated state this would be equivalent to a wetland, and a dry/drought state. We then assume that as the land dry out it becomes less porous so more water flows directs overland. We can then explore how much rainfall would have to change to transition between these states.
 
-Another promesing avenuea we could explore would be attemtping to match the conceptual models with the reduced PDE model. This would be of great intrested as the different methoglgies for building flooding models are metphoricaly existe on seprated islands. By matching the PDE modle to a conceptual model we hope to be able to connect these modles to gether.
+Another promising avenue we could explore would be in attempting to match the conceptual models with the reduced PDE model. This would be of great interest as the different methodologies for building flooding models are are currently some what isolated form each other. By matching the PDE model to a conceptual model we hope to be able to connect these model to gether and in the process gain more information about the different modelling techniques.
 
-These free possible reasrech direction are not ment to be taken as a demenstartion of the scope of this projetc and it postential.
+These three possible research direction are not meant to outline the scope of this project and its potential.
 
 
 
@@ -264,16 +266,16 @@ These free possible reasrech direction are not ment to be taken as a demenstarti
 Like all research proposal we believe that we are carrying out novel and interesting mathematics. Additionally due to the subject of this research on climate change and namely river flooding which is one of a major extensional threat to the United Kingdom and the wider world. Any additional understanding of flooding mechanics and additional predictions will prove to be extremely valuable.
 \subsection{Mathematical impact}
 To emphasise the mathematical impact of this project here is a non-exhaustive list of the novel mathematics. 
-\begin{enumerate}
-    \item Applying assytopic methods to derive scaling laws for climate models is a potential new application for these methods.
+\begin{itemize}
+    \item Applying asymptotic methods to derive scaling laws form conceptual climate models is a potential new application for these methods.
     \item A deep analytical analysis of conceptual modelling methods we will help to give understanding of how these commonly used techniques will behaviour.
     \item The application of a multiple time scales analysis to the reduced PDE models is very likely to generate new and interesting problems which will need to be solved.
-\end{enumerate}
+\end{itemize}
 
 \subsection{Industrial impact}
-As this problem has been brought forward by the Environments Agency and ??????????? there is a clear interest in this type of work. But more concretely there is a very large motivation from practising hydrologists for a rigours analysis of the conceptual models that for the foundation of there practice. Additionally, we believe that the scaling laws that will be derived during this process may help to inform how we manage the risks of river flooding.
+As this problem has been brought forward by the Environments Agency there is a clear interest in this type of work from industry. But more concretely there is a very large motivation from practising hydrologists for a rigours analysis of the conceptual models that form a important of there practice. Additionally, we believe that the scaling laws that will be derived during this process may help to inform how we manage the risks of river flooding.
 
-Finally, the second strand of this project in extending the PDE model to incorporate periodic forcing we will allow us to help examine seasonl rainfall and examine/predict chages in potential flooding over the timescale of climate change. This type of analysis is challenging for industry to carry out and is prime territory for a PhD project.
+Finally, the second strand of this project in extending the PDE model to incorporate periodic forcing we will allow us to help examine seasonal rainfall and examine/predict changes in potential flooding over the timescale of climate change. This type of analysis is challenging for industry to carry out and is prime territory for a PhD project.
 
 
 
