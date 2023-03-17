@@ -1,8 +1,8 @@
-PWD c:/Users/henry/Documents/SAMBa/ITT17/Report/ITT Report
+PWD c:/Users/henry/Documents/SAMBa/ITT-Report
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/henry/Documents/SAMBa/ITT17/Report/ITT Report/Report_main.tex
+INPUT c:/Users/henry/Documents/SAMBa/ITT-Report/Report_main.tex
 OUTPUT Report_main.log
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
