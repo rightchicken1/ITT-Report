@@ -8,3 +8,15 @@ Report_main.log
 Report_main.fls
 
 Report_main.synctex.gz
+
+*.bbl
+
+*.blg
+
+*.fdb_latexmk
+
+*.log
+
+*.fls
+
+*.gz
