@@ -46,21 +46,21 @@ There is currently unmistakable evidence that the climate of the planet is chang
 In the United Kingdom one of the largest potential effects of climate change we will encounter takes the form of river flooding. The government estimate that the cost of the 2015/16 floods was approximately 1.6 billion pounds. This number does not take into account the human toll of this event. 
 
 
-Additionally, it appears that the number and severity of flooding is increasing. This has motivated the hydrological community in increasing the understanding of river flooding. This has been done by developing a `zoo' of potential flooding models. However, there are two problems regarding this large group of models, firstly, since there is so many it is hard to separate them to decide which would be the most appropriate \cite{neelz2013benchmarking}. 
-Secondly there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using asymptotic analysis.
+Additionally, it appears that the number and severity of flooding is increasing. This has motivated the hydrological community to increase there understanding of river flooding. This has been done by developing a `zoo' of potential flooding models. However, there are two problems regarding this large group of models, firstly, since there is so many it is hard to separate them to decide which would be the most appropriate \cite{neelz2013benchmarking}. 
+Secondly there is still information which is not being extracted from these models that can help us predict how flooding will change. We believe that we can solve both of these problems by examining models using a novel application of asymptotic methods.
 
 
 \subsection{How do we model river flooding}
-There are currently three main approaches to building flooding models. We have statistical models that rely on using statistical methods to fit models to data and use statistical models to make inferences about the future, this class of models is not a major focus of this project. 
+There are currently three main approaches to building flooding models. We have statistical models that rely on using statistical methods to fit models to data and to make inferences about the future, this class of models is not a major focus of this project. 
 
 The other two classes of models which we will focus our efforts on will be conceptual models, these rely on creating a set of states from which the quantity of interest can move between, this is best represented by Figure \ref{fig:conceptual}. 
-The other modelling technique of interest, are physical models these take a continuing mechanics approach and set up a set of conservation laws and use these to drive a set of PDE equations that can then be used to model the flooding event.
+The other modelling technique of interest, are physical models these take a continuum mechanics approach and set up a set of conservation laws and use these to derive a set of PDE equations that can then be used to model the flooding event.
 
 
 
 \subsection{Conceptual models}
 
- As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding, and simplify it down to a set of possible states/locations where a quantity of interest may reside in. Travel between these states is then governed by a simple mathematical expression. These models are then trained on a real life example to choose parameter that control the mathematical expressions.
+ As briefly mentioned in the previous section conceptual models attempt to capture a complex system such as river flooding, and simplify it down to a set of possible states/locations where a quantity of interest may reside in. Travel between these states is then governed by a simple mathematical expression. These models are then trained on a data to choose parameter that control the mathematical expressions.
  
  \begin{minipage}{0.5\textwidth}
     \begin{figure}[H]
@@ -175,10 +175,10 @@ As we discussed earlier there is work to be done in improving the insights which
     \qquad To demonstrate this procedure we will use the reduced PDE model. First we pick some rainfall function, in this case we chose, \begin{align}
         r = r_0\epsilon,
     \end{align}
-    where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of alpha. Next we fix some time, in this case we pick time such that the ground is saturated and a flood has formed. 
+    where $r_0$ is some baseline rainfall. So in Figure \ref{fig:S14_fig1} each colour of line represents a different value of $\epsilon$. Next we fix some time, in this case we pick time such that the ground is saturated and a flood has formed. 
     
     \qquad We then take these values of $H(r)$ and attempt to fit some function to them. In this case this can be seen in Figure \ref{fig:S14_fig2} which is a loglog plot. From this we get that $H(r)$ scales form some power law more precisely, \begin{align}
-    H(r)=r_0^{\epsilon}.
+    H(r)\propto r_0^{\epsilon}.
     \end{align}
     
     \qquad We will confirm this by asymptotically examining the model, unfortunately during the preliminary investigations which we carried out during ITT17 we did not have time analytical derive the scaling law for this model.
@@ -225,11 +225,11 @@ As we discussed earlier there is work to be done in improving the insights which
 
 \vspace{5pt}
 \subsection{People}
-Below are the group of people who would make a the supervisory team for this project.
+Below are the group of people who would make up the supervisory team for this project.
 \begin{itemize}
-    \item Primary supervisor: \textbf{Dr. Philipp Trinh}.
-    \item Secondary supervisor: \textbf{Dr Lisa Kreusser}.
-    \item External collaborator: \textbf{Professor Rob Lamb} with the JBA group.
+    \item Primary supervisor: \textbf{Dr. Philipp Trinh} who specialises in asymptotic methods and fluid mechanics.
+    \item Secondary supervisor: \textbf{Dr Lisa Kreusser} who has experience with dynamical systems and PDE models.
+    \item External collaborator: \textbf{Professor Rob Lamb} with the JBA group who brought this problem forward with the Environments Agency.
 \end{itemize}
 
 
